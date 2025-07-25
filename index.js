@@ -17,7 +17,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 app.use("/", require("./routes/auth"));
-app.use("/banners", require("./routes/banner"));
+app.use("/banner", require("./routes/banner"));
 app.use("/services", require("./routes/service"));
 app.use("/", require("./routes/balance"));
 app.use("/transaction", require("./routes/transaction"));
